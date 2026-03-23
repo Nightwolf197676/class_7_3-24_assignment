@@ -24,8 +24,8 @@ pipeline {
         ]]) {
             sh '''
                 terraform init \
-                  -backend-config="bucket=jenkins-891377135193" \
-                  -backend-config="key=jenkins/new-jenkins-s3-test.tfstate" \
+                  -backend-config="bucket=jenkins-891377135193/jenkins" \
+                  -backend-config="key=new-jenkins-s3-test.tfstate" \
                   -backend-config="region=us-east-1" \
                   -backend-config="encrypt=true"
             '''
