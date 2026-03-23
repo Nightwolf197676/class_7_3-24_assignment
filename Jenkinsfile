@@ -18,7 +18,7 @@ pipeline {
     steps {
         withCredentials([[
             $class: 'AmazonWebServicesCredentialsBinding',
-            credentialsId: 'nightwolf',
+            credentialsId: 'bf6a2105-8276-483c-b42f-f697caa59979',
             accessKeyVariable: 'AWS_ACCESS_KEY_ID',
             secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
         ]]) {
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'nightwolf'
+                    credentialsId: 'bf6a2105-8276-483c-b42f-f697caa59979'
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                 ]]) {
@@ -67,7 +67,7 @@ pipeline {
                     if (destroyChoice == 'yes') {
                         withCredentials([[
                             $class: 'AmazonWebServicesCredentialsBinding',
-                            credentialsId: 'nightwolf'
+                            credentialsId: 'bf6a2105-8276-483c-b42f-f697caa59979'
                             accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                             secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                         ]]) {
