@@ -13,7 +13,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Nightwolf197676/new-jenkins-s3-test'
             }
         }
-
+        stage('Terraform Format') {
+            steps {
+                sh '''
+                    terraform fmt -check -diff
+                '''
+            }
+        }
         stage('Terraform Init') {
     steps {
         withCredentials([[
