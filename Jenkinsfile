@@ -4,6 +4,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
         TF_IN_AUTOMATION   = 'true'
+        TF_VERSION = '1.9.8'   // or latest stable, e.g., '1.10.0'
     }
 
     stages {
