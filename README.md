@@ -1,19 +1,6 @@
-# New Jenkins server test with terraform deployment and triggers
+# WEEK 29 3/24 ASSIGNMENT
 
-## Jenkinsfile
+Everything needed for validation is in this repo.
 
-A simple declarative Jenkinsfile
-- Clones git repo 
-- Binds AWS IAM user creds in terraform stages with AWS Creds plugin
-- Stages for terraform init and apply 
-- Destroy stage using user input 
 
-## Terraform script 
-- A simple AWS S3 bucket is deployed
-- State file is stored in S3 backend 
-- S3 bucket name uniqueness is guranteed 
 
-## User data
-EC2 startup script to bootstrap Jenkins server
-
-# class_7_3-24_assignment
