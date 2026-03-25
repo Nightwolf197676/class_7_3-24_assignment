@@ -16,3 +16,4 @@ A simple declarative Jenkinsfile
 ## User data
 EC2 startup script to bootstrap Jenkins server
 
+# class_7_3-24_assignment
